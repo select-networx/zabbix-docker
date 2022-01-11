@@ -101,3 +101,5 @@ ENTRYPOINT ["/usr/bin/tini", "--", "/usr/bin/docker-entrypoint.sh"]
 USER 1997
 
 CMD ["/usr/sbin/zabbix_proxy", "--foreground", "-c", "/etc/zabbix/zabbix_proxy.conf"]
+
+COPY ["aruba.py", "/tmp/"]
